@@ -19,7 +19,7 @@ libc = "0.2"
 thiserror = "1"
 
 [target.'cfg(unix)'.dependencies]
-nix = "0.26"
+nix = { git = "https://github.com/saxon-parker/nix.git", rev = "f0bc03cdab246ed0cd72e025d706477fa896120e" }
 sysctl = "0.5"
 
 [target.'cfg(windows)'.dependencies]
